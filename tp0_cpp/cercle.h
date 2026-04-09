@@ -1,38 +1,28 @@
-#define _USE_MATH_DEFINES
-#include "cercle.h"
-#include <iostream>
-#include <cmath>
-using namespace std;
+#ifndef CERCLE_H
+#define CERCLE_H
 
-Cercle::Cercle(double r, const Point& c) {
-    this->rayon = r;
-    this->centre = c;
-}
+#include "point.h"
 
-Cercle::Cercle() : rayon(0), centre(Point()) {}
+class Cercle {
 
-double Cercle::getRayon() const { return rayon; }
-Point Cercle::getCentre() const { return centre; }
-void Cercle::setRayon(double r) { rayon = r; }
-void Cercle::setCentre(const Point& c) { centre = c; }
+public:
+    Cercle(double r, const Point& c);
+    Cercle();
 
-void Cercle::affiche() const {
-    cout << "Cercle(rayon=" << rayon << ", centre=");
-    centre.affiche();
-}
+    double getRayon() const;
+    Point getCentre() const;
+    void setRayon(double r);
+    void setCentre(const Point& c);
 
-double Cercle::surface() const {
-    return M_PI * rayon * rayon;
-}
+    void affiche() const;
+    double surface() const;
+    double perimetre() const;
+    bool comparaison(const Cercle& cer) const;
+    void agrandir(double a);
 
-double Cercle::perimetre() const {
-    return 2 * M_PI * rayon;
-}
+private:
+    double rayon;
+    Point centre;
+};
 
-bool Cercle::comparaison(const Cercle& cer) const {
-    return rayon == cer.rayon && centre.comparer(cer.centre);
-}
-
-void Cercle::agrandir(double a) {
-    rayon += a;
-}
+#endif
