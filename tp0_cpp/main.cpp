@@ -21,7 +21,7 @@ int main() {
 
     cout << "est ce que A et C sont égaux?  " << (p1.comparer(p3) ? "Oui" : "Non") << endl;
 
-    cout << "    "  << endl;
+    cout << "    " << endl;
     cout << "cercle" << endl;
 
 
@@ -35,7 +35,9 @@ int main() {
     cout << "c3: "; c3.affiche();
     cout << "est ce que C1 et C3 sont égaux ? " << (c1.comparaison(c3) ? "Oui" : "Non") << endl;
     c1.agrandir(2.0);
-    cout << "c1 apres agrandir de (2,0): "; c1.affiche()<<")";
+    cout << "c1 apres agrandir de (2.0): ";
+    c1.affiche();
+    cout << ")" << endl;
 
 
 
