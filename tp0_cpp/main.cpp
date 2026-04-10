@@ -32,7 +32,8 @@ int main() {
     cout << "Surface c1= " << c1.surface() << endl;
     cout << "Perimetre c1= " << c1.perimetre() << endl;
     Cercle c3(5.0, p2);
-    cout << "est ce que C1 et C2 sont égaux ? " << (c1.comparaison(c3) ? "Oui" : "Non") << endl;
+    cout << "c3: "; c3.affiche();
+    cout << "est ce que C1 et C3 sont égaux ? " << (c1.comparaison(c3) ? "Oui" : "Non") << endl;
     c1.agrandir(2.0);
     cout << "c1 apres agrandir de (2,0): "; c1.affiche()<<")";
 
