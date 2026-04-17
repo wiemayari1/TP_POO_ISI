@@ -1,0 +1,15 @@
+package com.java.ex6;
+
+public class Test {
+    public static void main(String[] args) {
+        Developpeur d1 = new Developpeur(1, "Ranim", "ranim@email.com", 10000, "PHP");
+        Developpeur d2 = new Developpeur(2, "Soumaya", "soumaya@email.com", 12000, "Java");
+        Manager m1 = new Manager(3, "Wiem", "wiem@email.com", 30000, "Informatique");
+        Manager m2 = new Manager(4, "Aya", "aya@email.com", 25000, "RH");
+        
+        System.out.println(m1);
+        System.out.println(d1);
+        System.out.println(d2);
+        System.out.println(m2);
+    }
+}
