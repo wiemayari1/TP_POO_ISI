@@ -1,0 +1,23 @@
+package com.java.ex7;
+
+public class TestForme {
+    public static void main(String[] args) {
+        int n = 3;          
+        Forme f;
+        
+        switch(n) {
+            case 1:
+                f = new Point(1, 2);
+                break;
+            case 2:
+                f = new Cercle(5, 2, 3);
+                break;
+            case 3:
+                f = new Cylindre(5, 2, 3, 10);
+                break;
+            default:
+                f = new Point(0, 0);
+        }
+        f.affiche();
+    }
+}
