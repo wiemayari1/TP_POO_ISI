@@ -1,0 +1,28 @@
+package com.java.ex3;
+import java.util.ArrayList;
+
+class ListeDeDocuments {
+    public ArrayList<Document> liste;
+    
+    public ListeDeDocuments() {
+        this.liste = new ArrayList<>();
+    }
+    
+    public void add(Document d) {
+        liste.add(d);
+    }
+    
+    public void afficherTousLesDocuments(){
+        for (Document d : liste) {
+            System.out.println(d);
+        }
+    }
+    
+    public void afficherTousLesLivres() {
+        for (Document d : liste) {
+            if (d instanceof Livre) {
+                System.out.println(d);
+            }
+        }
+    }
+}
