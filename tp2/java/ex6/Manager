@@ -1,0 +1,19 @@
+package com.java.ex6;
+
+public class Manager extends Personne {
+    public String service;
+    
+    public Manager(int id, String fullname, String email, float salaire, String service) {
+        super(id, fullname, email, salaire);
+        this.service = service;
+    }
+    
+    public double calculerSalaire() {
+        return salaire * 1.35;
+    }
+    
+    public String toString() {
+        return "Le salaire du manager " + fullname + " est : " + 
+               calculerSalaire() + "dt, son service : " + service;
+    }
+}
