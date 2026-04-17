@@ -1,0 +1,7 @@
+package com.java.ex4;
+
+class Agriculteur extends Personne {
+    public Agriculteur(String nom) {
+        super(nom);
+    }
+}
