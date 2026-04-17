@@ -1,0 +1,12 @@
+package com.java.ex4;
+
+class Forgeron extends Personne {
+    public Forgeron(String nom) {
+        super(nom);
+    }
+    
+    @Override
+    public void affiche() {
+        System.out.println("Je suis " + nom + " le forgeron.");
+    }
+}
