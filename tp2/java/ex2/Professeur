@@ -1,0 +1,25 @@
+package com.java.ex2;
+
+public class Professeur extends Employe{
+	String spécialité;
+	
+	public Professeur(String nom, String prenom, double salaire, String spécialité) {
+		super(nom,prenom,salaire);
+		this.spécialité=spécialité;
+	}
+	
+	@Override
+    public String toString() {
+		
+        return "Professeur [spécialité=" +spécialité+ super.toString()+"]";
+    }
+	 
+	public String getSpécialité() {
+    	return spécialité;
+    }
+ public void setSpécialité(String Spécialité) {
+	 this.spécialité=Spécialité;
+	 
+ }
+
+}
