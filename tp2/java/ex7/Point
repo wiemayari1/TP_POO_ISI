@@ -1,0 +1,14 @@
+package com.java.ex7;
+
+public class Point extends Forme {
+    public int x, y;
+    
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+    
+    public void affiche() {
+        System.out.println("Je suis un point de coordonnée " + x + "," + y);
+    }
+}
