@@ -1,0 +1,24 @@
+package com.java.ex3;
+
+public class Document {
+	int num;
+	String titre;
+	
+	public Document(int num, String titre) {
+		this.num=num;
+		this.titre=titre;
+	}
+    
+	public int getNumero() {
+        return num;
+    }
+    
+    public String getTitre() {
+        return titre;
+    }
+    
+    @Override
+    public String toString() {
+        return "Document [num=" + num + ", titre=" + titre +"]";
+    }
+}
