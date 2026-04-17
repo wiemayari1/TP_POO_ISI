@@ -1,0 +1,5 @@
+package com.java.ex7;
+
+public abstract class Forme {
+    public abstract void affiche();
+}
