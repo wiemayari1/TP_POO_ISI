@@ -1,0 +1,19 @@
+package com.java.ex6;
+
+public class Developpeur extends Personne {
+    public String specialite;
+    
+    public Developpeur(int id, String fullname, String email, float salaire, String specialite) {
+        super(id, fullname, email, salaire);
+        this.specialite = specialite;
+    }
+    
+    public double calculerSalaire() {
+        return salaire * 1.20;
+    }
+    
+    public String toString() {
+        return "Le salaire du développeur " + fullname + " est : " + 
+               calculerSalaire() + "dt, sa spécialité : " + specialite;
+    }
+}
