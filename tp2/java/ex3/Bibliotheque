@@ -1,0 +1,17 @@
+package com.java.ex3;
+
+public class Bibliotheque {
+    public static void main(String[] args) {
+        ListeDeDocuments liste = new ListeDeDocuments();
+        
+        liste.add(new Livre(1, "Ana Ahya", "Leïla Baalbaki", 500));
+        liste.add(new Dictionnaire(2, "Larousse", "Français", 50000));
+        liste.add(new Document(4, "Document"));
+        
+        System.out.println("documents");
+        liste.afficherTousLesDocuments();
+        
+        System.out.println("livres");
+        liste.afficherTousLesLivres();
+    }
+}
