@@ -1,0 +1,35 @@
+package com.java.ex3;
+
+public class Dictionnaire extends Document{
+	String langue;
+	int nbarticles;
+	
+	
+	public Dictionnaire(int num, String titre, String langue, int nbarticles) {
+		super(num,titre);
+		this.langue=langue;
+		this.nbarticles=nbarticles;
+	}
+	
+	public String getLnague() {
+        return langue;
+    }
+    
+    public int getNbarticles() {
+        return nbarticles;
+    }
+    
+    public void setLnague(String langue) {
+        this.langue=langue;
+    }
+    
+    public void getNbarticles(int nbarticles) {
+        this.nbarticles=nbarticles;
+    }
+    
+    @Override
+    public String toString() {
+        return "Document [auteur=" + langue + ", nbpage=" + nbarticles + "]";
+    }
+
+}
