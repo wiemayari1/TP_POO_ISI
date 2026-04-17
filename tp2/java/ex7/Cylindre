@@ -1,0 +1,18 @@
+package com.java.ex7;
+
+public class Cylindre extends Cercle {
+    public double hauteur;
+    
+    public Cylindre(int x, int y, double rayon, double hauteur) {
+        super(x, y, rayon);
+        this.hauteur = hauteur;
+    }
+    
+    public double surface() {
+        return 2 * super.surface() + 2 * 3.14 * rayon * hauteur;
+    }
+    
+    public void affiche() {
+        System.out.printf("Je suis un cylindre de surface %.2f%n", surface());
+    }
+}
