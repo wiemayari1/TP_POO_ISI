@@ -1,0 +1,21 @@
+package com.java.ex6;
+
+public abstract class Personne {
+    public int id;
+    public String fullname;
+    public String email;
+    public float salaire;
+    
+    public Personne(int id, String fullname, String email, float salaire) {
+        this.id = id;
+        this.fullname = fullname;
+        this.email = email;
+        this.salaire = salaire;
+    }
+    
+    public abstract double calculerSalaire();
+    
+    public String toString() {
+        return fullname;
+    }
+}
