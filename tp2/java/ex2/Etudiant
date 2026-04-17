@@ -1,0 +1,27 @@
+package com.java.ex2;
+
+public class Etudiant extends Personne{
+	public int nce;
+
+	
+	public Etudiant(String nom, String prenom ,int nce) {
+		super(nom, prenom);
+    	this.nce=nce;
+    }
+	
+	@Override
+    public String toString() {
+		
+        return "Etudiant [NCE=" +nce+ super.toString()+"]";
+    }
+	
+	 public long getNCE() {
+	    	return nce;
+	    }
+	 public void setNCE(long nce) {
+		 this.nce=nce;
+		 
+	 }
+	 
+
+}
