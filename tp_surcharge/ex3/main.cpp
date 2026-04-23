@@ -27,8 +27,6 @@ int main() {
     cout << "avant ++v1: " << v1 << endl;
     ++v1;
     cout << "apres ++v1 (+ 5): " << v1 << endl;
-    v1++;
-    cout << "apres v1++ (+5): " << v1 << endl;
 
     return 0;
 }
