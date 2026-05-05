@@ -1,0 +1,21 @@
+package ex3;
+
+public class main {
+
+	public static void main(String[] args) {
+
+        Pointcol<Float, Integer> p1 = new Pointcol<>(0.5f, 3.0f, 3);
+        System.out.print("p1 : ");
+        p1.affiche();
+
+        Pointcol<Double, String> p2 = new Pointcol<>(12.0, 4.2, "blue");
+        System.out.print("p2 : ");
+        p2.affiche();
+
+        Pointcol<Integer, Character> p3 = new Pointcol<>(6, 4, 'B');
+        System.out.print("p3 : ");
+        p3.affiche();
+    }
+
+	}
+
