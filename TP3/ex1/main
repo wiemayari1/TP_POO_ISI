@@ -1,0 +1,17 @@
+package ex1;
+
+public class main {
+
+	public static void main(String[] args) {
+		Integer[] tabEntier = {3, 12, 5, 7};
+        System.out.println("Somme entiers   : " + Somme.somme(tabEntier, 4));
+
+        Float[] tabFloat = {4.0f, 1.5f};
+        System.out.println("Somme floats : " + Somme.somme(tabFloat, 2));
+
+        Double[] tabDouble = {13.0, 6.2, 7.0};
+        System.out.println("Somme doubles   : " + Somme.somme(tabDouble, 3));
+
+	}
+
+}
